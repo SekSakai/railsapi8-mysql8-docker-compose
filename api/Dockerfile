@@ -1,7 +1,7 @@
 FROM ruby:3.2.2-slim AS base
 
 # 作業ディレクトリを設定
-WORKDIR /rails
+WORKDIR /app
 
 # 必要なパッケージをインストール（MySQL -> MariaDB へ変更）
 RUN apt-get update -qq && \
